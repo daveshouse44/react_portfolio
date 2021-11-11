@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         setCurrentPage={setCurrentPage}
       ></Nav>
       <main>{renderPage()}</main>
+      <Footer></Footer>
     </div>
   );
 }
