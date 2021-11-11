@@ -5,6 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   });
   const navMenu = ["About", "Portfolio", "Contact", "Resume"];
   const [currentPage, setCurrentPage] = useState("About");
-
+// Renders content based on what page is clicked
   const renderPage = () => {
     console.log("!!!!!!Current Page!!!!!!!", currentPage);
     if (currentPage === "About") {
@@ -26,6 +27,7 @@ function App() {
     if (currentPage === "Resume") {
       return <Resume />;
     }
+    return <Portfolio />;
   };
   // Passes menu items, current page and page change function to nav bar, renders page in to main body of html
   return (
