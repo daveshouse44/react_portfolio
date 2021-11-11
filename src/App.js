@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -15,12 +16,12 @@ function App() {
   const renderPage = () => {
     console.log("!!!!!!Current Page!!!!!!!", currentPage);
     switch (currentPage) {
-      case 'Portfolio':
+      // case 'Portfolio':
       //   return <Portfolio></Portfolio>
       //   break;
-      // case 'Contact':
-      //   return <Contact></Contact>
-      //   break;
+      case 'Contact':
+        return <Contact></Contact>
+        break;
       // case 'Resume':
       //   return <Resume></Resume>
       //   break;
