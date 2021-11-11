@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 import "./App.css";
 
 function App() {
@@ -20,12 +21,12 @@ function App() {
       // case 'Portfolio':
       //   return <Portfolio></Portfolio>
       //   break;
-      case 'Contact':
-        return <Contact></Contact>
+      case "Contact":
+        return <Contact></Contact>;
         break;
-      // case 'Resume':
-      //   return <Resume></Resume>
-      //   break;
+      case "Resume":
+        return <Resume></Resume>;
+        break;
       default:
         return <About></About>;
         break;
