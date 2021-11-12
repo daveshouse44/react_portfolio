@@ -1,0 +1,43 @@
+[{
+    "name": "Anytime Budget Tracker", 
+    "skill": "NoSQL/IndexDB",
+    "image": "anytime_budget_tracker.png",
+    "deploy": "https://budget-tracker-anytime.herokuapp.com/",
+    "repo": "https://github.com/daveshouse44/Anytime_Budget_Tracker"
+  },
+  {
+    "name": "Password Generator",
+    "skill": "JavaScript/HTML",
+    "image": "password_generator.png",
+    "deploy": "https://daveshouse44.github.io/PasswordGenerator/",
+    "repo": "https://github.com/daveshouse44/PasswordGenerator"
+  },
+  {
+    "name": "Fitness Tracker",
+    "skill": "NoSQL/MongoDB",
+    "image": "workout_tracker.png",
+    "deploy": "https://workout-tracker-mdb.herokuapp.com/",
+    "repo": "https://github.com/daveshouse44/Workout_Tracker"
+  },
+  {
+    "name": "Tech Blog",
+    "skill": "Sequelize/Handlebars",
+    "image": "tech_blog.png",
+    "deploy": "https://tech-blog-daveshouse44.herokuapp.com/",
+    "repo": "https://github.com/daveshouse44/Tech_Blog"
+  },
+  {
+    "name": "Note Taker",
+    "desc": "Node/Heroku",
+    "image": "note_taker.png",
+    "deploy": "https://dave-note-taker.herokuapp.com/",
+    "repo": "https://github.com/daveshouse44/Note_Taker"
+  },
+  {
+    "name": "U.S. National Parks",
+    "desc": "JavaScript/API",
+    "image": "us_national_parks.png",
+    "deploy": "https://cumar-khalif.github.io/U.S.-National-Parks/",
+    "repo": "https://github.com/Cumar-khalif/U.S.-National-Parks"
+  }
+]
