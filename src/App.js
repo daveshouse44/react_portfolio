@@ -15,7 +15,7 @@ function App() {
   });
   const navMenu = ["About", "Portfolio", "Contact", "Resume"];
   const [currentPage, setCurrentPage] = useState("About");
-// Renders content based on what page is clicked
+  // Renders content based on what page is clicked
   const renderPage = () => {
     console.log("!!!!!!Current Page!!!!!!!", currentPage);
     if (currentPage === "About") {

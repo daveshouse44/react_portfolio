@@ -8,7 +8,11 @@ const Footer = () => {
   return (
     <footer>
       <div id="logos">
-        <a href="https://github.com/daveshouse44" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/daveshouse44"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img alt="Github Logo" src={github} />
         </a>
         <a

@@ -1,5 +1,6 @@
-[{
-    "name": "Anytime Budget Tracker", 
+[
+  {
+    "name": "Anytime Budget Tracker",
     "skill": "NoSQL/IndexDB",
     "image": "anytime_budget_tracker.png",
     "deploy": "https://budget-tracker-anytime.herokuapp.com/",
