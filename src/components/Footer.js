@@ -8,18 +8,20 @@ const Footer = () => {
   return (
     <footer>
       <div id="logos">
-        <a href="https://github.com/daveshouse44" target="_blank">
+        <a href="https://github.com/daveshouse44" target="_blank" rel="noreferrer">
           <img alt="Github Logo" src={github} />
         </a>
         <a
           href="https://www.linkedin.com/in/david-tierney-652030214/"
           target="_blank"
+          rel="noreferrer"
         >
           <img alt="LinkedIn Logo" src={linkedin} />
         </a>
         <a
           href="https://stackoverflow.com/users/16111199/david-tierney"
           target="_blank"
+          rel="noreferrer"
         >
           <img alt="StackOverflow Logo" src={stackoverflow} />
         </a>

@@ -7,7 +7,7 @@ const Resume = () => {
             <h1>
                 Resume
             </h1>
-            <p>Checkout my <a href="https://drive.google.com/file/d/11fyZIj1WSbo1IxztGDIzAUxf06V4z1VK/view?usp=sharing" target="_blank">resume</a></p>
+            <p>Checkout my <a href="https://drive.google.com/file/d/11fyZIj1WSbo1IxztGDIzAUxf06V4z1VK/view?usp=sharing" target="_blank" rel="noreferrer">resume</a></p>
             <h3>Front-end Skills</h3>
             <ul className="resumeList">
                 <li>HTML</li>

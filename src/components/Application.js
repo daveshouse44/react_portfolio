@@ -7,10 +7,10 @@ const Application = ({ application }) => {
     <figure className="applicationCard">
       <div className="applicationText">
         <div className="applicationLinks">
-          <a href={application.deploy} target="_blank">
+          <a href={application.deploy} target="_blank" rel="noreferrer">
             <h3>{application.name}</h3>
           </a>
-          <a href={application.repo} target="_blank">
+          <a href={application.repo} target="_blank" rel="noreferrer">
             <img className="applicationLogo" alt="Git Logo" src={git}></img>
           </a>
         </div>
