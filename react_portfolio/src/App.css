@@ -22,7 +22,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
 }
 
 header h1 {
@@ -37,6 +36,7 @@ header h1 {
 
 .navActive {
     font-weight: bold;
+    color: var(--tickle-me-pink)
 }
 
 .nav-list {
@@ -52,6 +52,26 @@ header h1 {
     margin: 15px;
     cursor: pointer;
   }
+
+/* main body styling */
+section {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+section p {
+  margin: 15px auto;
+  line-height: 1.5em;
+}
+
+.profile-photo {
+  height: auto;
+  max-width: 200px;
+  border-radius: 100%;
+  box-shadow: 12px 12px 45px 5px var(--rich-blk);
+  border: 3px solid var(--rich-blk)
+}
+
 /* footer styling */
 footer {
   width: 100%;
@@ -62,6 +82,12 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
+  opacity: .4;
+}
+
+footer:hover {
+  opacity: 1;
+  background-color: var(--maize-crayola);
 }
 
 #logos {
