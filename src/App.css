@@ -1,25 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --rich-blk: #090e20;
+  --st-patricks-blue: #1d2f6fff;
+  --cornflower-blue: #8390faff;
+  --maize-crayola: #fac748ff;
+  --lavender-blush: #f9e9ecff;
+  --tickle-me-pink: #f88dadff;
+}
 
+/* header styling */
+header {
+    width: 100%;
+    height: 90px;
+    background-color: var(--st-patricks-blue);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+header h1 {
+    margin-left: 55px;
+    color: var(--lavender-blush);
+
+}
+
+.nav {
+    width: auto;
+}
+
+.navActive {
+    font-weight: bold;
+}
+
+.nav-list {
+    margin-right: 55px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--lavender-blush)
+}
+
+.nav-list li {
+    margin: 15px;
+    cursor: pointer;
+  }
 /* footer styling */
 footer {
-    width: 100%;
-    height: 45px;
-    background-color: rgb(61, 71, 214);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: var(--rich-blk);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #logos {
-    height: 80%;
+  height: 80%;
 }
 
 #logos img {
-    height: 100%;
-    background-color: none;
-    margin: 0px 8px;
+  height: 100%;
+  background-color: none;
+  margin: 0px 8px;
 }
 
 #logos img:hover {
-    opacity: 1;
+  opacity: 1;
 }

@@ -15,7 +15,7 @@ const Application = ({ application }) => {
           </a>
         </div>
 
-        <p>{application.desc}</p>
+        <p>{application.skill}</p>
       </div>
       <img
         className="applicationBackground"
