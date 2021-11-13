@@ -19,13 +19,13 @@ const Contact = () => {
       console.log(isValid);
       // Conditional statement to determine if email is valid
       if (!isValid) {
-        setErrorMessage("Your email is invalid.");
+        setErrorMessage("Your email is invalid!");
       } else {
         setErrorMessage("");
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`Your ${e.target.name} is required!`);
       } else {
         setErrorMessage("");
       }
