@@ -27,7 +27,7 @@ Check out my latest projects and updates on my React portfolio page.
 
 ## Screenshot
 
-![Image of main page application](./react_portfolio\src\assets\images\screenshot.png) 
+![Image of main page application](./react_portfolio/src/assets/images/screenshot.png) 
 
 
 ## Technologies-Used
