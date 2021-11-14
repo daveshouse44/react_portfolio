@@ -29,14 +29,14 @@
   },
   {
     "name": "Note Taker",
-    "desc": "Node/Heroku",
+    "skill": "Node/Heroku",
     "image": "note_taker.png",
     "deploy": "https://dave-note-taker.herokuapp.com/",
     "repo": "https://github.com/daveshouse44/Note_Taker"
   },
   {
     "name": "U.S. National Parks",
-    "desc": "JavaScript/API",
+    "skill": "JavaScript/API",
     "image": "us_national_parks.png",
     "deploy": "https://cumar-khalif.github.io/U.S.-National-Parks/",
     "repo": "https://github.com/Cumar-khalif/U.S.-National-Parks"

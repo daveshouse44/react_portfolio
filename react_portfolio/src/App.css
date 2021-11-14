@@ -53,6 +53,11 @@ header h1 {
     cursor: pointer;
   }
 
+  .nav-list li:hover {
+    color: var(--maize-crayola)
+  }
+
+
 /* main body styling */
 section {
   padding: 18px 48px;
@@ -87,7 +92,16 @@ p a:hover {
   color: var(--maize-crayola);
 }
 
-/* contact styling */
+/* contact form styling */
+#contact-form button {
+  margin: 10px 0px;
+  padding: 0.4em 1.25em;
+  border: 0.1em solid var(--rich-blk);
+  border-radius:0.2em;
+  background-color: var(--lavender-blush);
+  font-weight: bold;
+}
+
 #contact-form {
   padding: 40px 25px 40px 25px;
   width: 75%;
@@ -111,6 +125,84 @@ p a:hover {
   color: var(--tickle-me-pink);
   font-weight: bold;
 }
+
+/* resume page styling */
+ul {
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+/* portfolio styling */
+#applicationCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 35px;
+}
+
+.applicationCard {
+  width: 390px;
+  height: 260px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+
+.applicationCard .applicationBackground {
+  width: 100%;
+  height: 100%;
+  transition: opacity .75s ease-in-out;
+  position: absolute;
+}
+
+.applicationLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.applicationLinks .applicationLogo {
+  height: 24px;
+  margin: 2px 10px 0px;
+}
+
+.applicationText {
+  padding: 5px;
+  position: absolute;
+  opacity: 0;
+  z-index: 50;
+  transition: opacity .5s ease-in-out;
+}
+
+.applicationCard:hover .applicationBackground {
+  opacity: .2;
+}
+.applicationCard:hover .applicationText {
+  opacity: 1;
+}
+
+.applicationText p {
+  margin: 0;
+  color: var(--cornflower-blue)
+}
+
+.applicationText a {
+  text-decoration: none;
+  color: var(--cornflower-blue);
+}
+
+.applicationText a:hover {
+  color: var(--maize-crayola);
+}
+
+.applicationLogo:hover {
+  background-color: var(--tickle-me-pink);
+  border-radius: 75%;
+}
 /* footer styling */
 footer {
   width: 100%;
@@ -126,7 +218,7 @@ footer {
 
 footer:hover {
   opacity: 1;
-  background-color: var(--maize-crayola);
+  background-color: var(--st-patricks-blue);
 }
 
 #logos {
@@ -136,9 +228,12 @@ footer:hover {
 #logos img {
   height: 100%;
   background-color: none;
-  margin: 0px 8px;
+  margin: 1px 10px;
+  transition: ease-in-out;
 }
 
 #logos img:hover {
   opacity: 1;
+  background-color: var(--maize-crayola);
+  border-radius: 50%;
 }

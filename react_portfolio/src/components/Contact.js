@@ -44,7 +44,8 @@ const Contact = () => {
   return (
     <section>
       <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form" action="https://formspree.io/f/mdoyqaew"
+  method="POST" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input

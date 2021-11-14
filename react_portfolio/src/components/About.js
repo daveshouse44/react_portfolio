@@ -4,6 +4,7 @@ import aboutPic from "../assets/images/profile-pic.jpg";
 const About = () => {
   return (
     <section>
+      <div className="aboutHeader">
       <h1>About me</h1>
       <img
         src={aboutPic}
@@ -11,6 +12,8 @@ const About = () => {
         style={{ width: "100%" }}
         alt="Profile Side View"
       />
+      </div>
+      <div className="aboutText">
       <p>
         With diverse talent in many industries, newly aquired full MERN stack
         development skills, ample managment and consultation experience, I am
@@ -26,6 +29,7 @@ const About = () => {
         delicious meals, checking new cuisine in town, and outdoor adventures
         with my family!
       </p>
+      </div>
     </section>
   );
 };

@@ -3,6 +3,7 @@ import React from "react";
 const Resume = () => {
   return (
     <section>
+      <div className="contactHeader">
       <h1>Resume</h1>
       <p>
         Checkout my resume {" "}
@@ -14,6 +15,8 @@ const Resume = () => {
           here
         </a>!
       </p>
+      </div>
+      <div>
       <h3>Front-end Skills</h3>
       <ul className="resumeList">
         <li>HTML</li>
@@ -23,17 +26,22 @@ const Resume = () => {
         <li>React</li>
         <li>Bootstrap</li>
         <li>Tailwind CSS</li>
+        <li>IndexedDB</li>
       </ul>
+      </div>
+      <div>
       <h3>Back-end Skills</h3>
       <ul className="resumeList">
         <li>Node</li>
+        <li>Express</li>
         <li>MySQL</li>
         <li>APIs</li>
-        <li>Mongo</li>
+        <li>MongoDB</li>
         <li>Insomnia</li>
         <li>Heroku</li>
         <li>GraphQL</li>
       </ul>
+      </div>
     </section>
   );
 };
