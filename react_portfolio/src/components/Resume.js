@@ -16,9 +16,10 @@ const Resume = () => {
         </a>!
       </p>
       </div>
-      <div>
+      <div className="skillList">
+        <div>
       <h3>Front-end Skills</h3>
-      <ul className="resumeList">
+      <ul className="frontSkills">
         <li>HTML</li>
         <li>CSS</li>
         <li>javascript</li>
@@ -31,7 +32,7 @@ const Resume = () => {
       </div>
       <div>
       <h3>Back-end Skills</h3>
-      <ul className="resumeList">
+      <ul className="backSkills">
         <li>Node</li>
         <li>Express</li>
         <li>MySQL</li>
@@ -41,6 +42,7 @@ const Resume = () => {
         <li>Heroku</li>
         <li>GraphQL</li>
       </ul>
+      </div>
       </div>
     </section>
   );

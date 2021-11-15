@@ -57,6 +57,15 @@ header h1 {
     color: var(--maize-crayola)
   }
 
+/* about me styling */
+.aboutHeader {
+  display: flex;
+}
+
+.aboutHeader img {
+  margin-left: 50px;
+}
+
 
 /* main body styling */
 section {
@@ -102,6 +111,10 @@ p a:hover {
   font-weight: bold;
 }
 
+#contact-form button:hover, #contact-form button:focus{
+ transform: scale(1.1);
+}
+
 #contact-form {
   padding: 40px 25px 40px 25px;
   width: 75%;
@@ -127,10 +140,8 @@ p a:hover {
 }
 
 /* resume page styling */
-ul {
-  display: inline-block;
-  *display: inline;
-  zoom: 1
+.skillList {
+  column-count: 2;
 }
 /* portfolio styling */
 #applicationCards {
