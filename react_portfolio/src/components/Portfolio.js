@@ -9,7 +9,7 @@ const Portfolio = () => {
       <h1>Portfolio</h1>
       <div id="applicationCards">
         {applicationList.map((application) => (
-          <Application application={application} />
+          <Application application={application} key={`${application.name}`} />
         ))}
       </div>
     </section>

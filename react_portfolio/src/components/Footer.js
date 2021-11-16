@@ -30,6 +30,7 @@ const Footer = () => {
           <img alt="StackOverflow Logo" src={stackoverflow} />
         </a>
       </div>
+      <p>2021 © David Tierney</p>
     </footer>
   );
 };

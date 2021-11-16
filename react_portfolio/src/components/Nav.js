@@ -14,6 +14,7 @@ const Nav = (props) => {
           <ul className="nav-list">
             {navMenu.map((menu) => (
               <li
+                key={`${menu}`}
                 className={`${currentPage === menu && "navActive"}`}
                 onClick={() => setCurrentPage(menu)}
               >

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
 
 const Contact = () => {
-  const [formState, setFormState] = useState({
+  let [formState, setFormState] = useState({
     name: "",
     email: "",
     message: "",
@@ -16,7 +16,7 @@ const Contact = () => {
   function handleChange(e) {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-      console.log(isValid);
+      // console.log(isValid);
       // Conditional statement to determine if email is valid
       if (!isValid) {
         setErrorMessage("Your email is invalid!");
@@ -38,21 +38,30 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
+    console.log("User submission", formState);
+    setFormState({
+      name: "",
+      email: "",
+      message: "",
+    });
+    alert(`Thank you ${name}!`);
+    return;
   }
 
   return (
     <section>
       <h1>Contact me</h1>
-      <form id="contact-form" action="https://formspree.io/f/mdoyqaew"
-  method="POST" onSubmit={handleSubmit}>
+      <form id="contact-form">
+        {/* action="https://formspree.io/f/mdoyqaew"></f */}
+        {/* // method="POST" </section>onSubmit={handleSubmit}> */}
         <div>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
             name="name"
-            defaultValue={name}
-            onBlur={handleChange}
+            placeholder="Enter name"
+            value={name}
+            onChange={handleChange}
           />
         </div>
 
@@ -61,8 +70,9 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            defaultValue={email}
-            onBlur={handleChange}
+            placeholder="Enter email"
+            value={email}
+            onChange={handleChange}
           />
         </div>
 
@@ -71,8 +81,9 @@ const Contact = () => {
           <textarea
             name="message"
             rows="5"
-            defaultValue={message}
-            onBlur={handleChange}
+            placeholder="Thanks for your feedback"
+            value={message}
+            onChange={handleChange}
           />
         </div>
         {errorMessage && (
@@ -80,7 +91,7 @@ const Contact = () => {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" data-testid="button">
+        <button onClick={handleSubmit} data-testid="button">
           Submit
         </button>
       </form>
