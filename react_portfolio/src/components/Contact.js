@@ -51,7 +51,7 @@ const Contact = () => {
   return (
     <section>
       <h1>Contact me</h1>
-      <form id="contact-form">
+      <form id="contact-form" action="https://formspree.io/f/mdoyqaew" method="POST">
         {/* action="https://formspree.io/f/mdoyqaew"></f */}
         {/* // method="POST" </section>onSubmit={handleSubmit}> */}
         <div>
