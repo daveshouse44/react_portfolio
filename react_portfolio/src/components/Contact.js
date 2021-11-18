@@ -2,60 +2,65 @@ import React, { useState } from "react";
 // Importing helper function to check if email is valid
 import { validateEmail } from "../utils/helpers";
 
-const Contact = () => {
-  let [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+function Contact() {
+  let [name, setName] = useState("");
+  let [email, setEmail] = useState("");
+  let [message, setMessage] = useState("");
 
   const [errorMessage, setErrorMessage] = useState("");
 
-  const { name, email, message } = formState;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  function handleChange(e) {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-      // console.log(isValid);
-      // Conditional statement to determine if email is valid
-      if (!isValid) {
-        setErrorMessage("Your email is invalid!");
-      } else {
-        setErrorMessage("");
-      }
+    if (name === "email") {
+      setEmail(value);
+    } else if (name === "name") {
+      setName(value);
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`Your ${e.target.name} is required!`);
-      } else {
-        setErrorMessage("");
-      }
+      setMessage(value);
     }
-
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
+    return;
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("User submission", formState);
-    setFormState({
-      name: "",
-      email: "",
-      message: "",
-    });
-    alert(`Thank you ${name}!`);
-    return;
+
+    if (!name) {
+      setErrorMessage("Your name is required!");
+    } else if (!email) {
+      setErrorMessage("Your email is required!");
+    } else if (!message) {
+      setErrorMessage("Your message is required!");
+    } else {
+      setErrorMessage("");
+    }
+
+    const isValid = validateEmail(email);
+
+    if (!isValid) {
+      setErrorMessage("Your email is invalid!");
+    } else {
+      setErrorMessage(`Thank you, ${name}!`)
+    }
+
+    setName("");
+    setEmail("");
+    setMessage("");
   }
 
   return (
     <section>
       <h1>Contact me</h1>
-      <form id="contact-form" action="https://formspree.io/f/myylrdkz" method="POST">
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/myylrdkz"
+        method="POST"
+      >
         <div>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
+            autoComplete="false"
             name="name"
             placeholder="Enter name"
             value={name}
@@ -67,6 +72,7 @@ const Contact = () => {
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
+            autoComplete="false"
             name="email"
             placeholder="Enter email"
             value={email}
@@ -95,6 +101,6 @@ const Contact = () => {
       </form>
     </section>
   );
-};
+}
 
 export default Contact;
