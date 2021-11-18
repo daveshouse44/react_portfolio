@@ -7,14 +7,14 @@ function Contact() {
   let [email, setEmail] = useState("");
   let [message, setMessage] = useState("");
 
-  const [errorMessage, setErrorMessage] = useState("");
+  const [userMessage, setUserMessage] = useState("");
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { id, value } = e.target;
 
-    if (name === "email") {
+    if (id === "email") {
       setEmail(value);
-    } else if (name === "name") {
+    } else if (id === "name") {
       setName(value);
     } else {
       setMessage(value);
@@ -24,9 +24,9 @@ function Contact() {
 
   const validateInput = (e) => {
     if (!e.target.value.length) {
-      setErrorMessage(`Your ${e.target.name} is required!`);
+      setUserMessage(`Your ${e.target.id} is required!`);
     } else {
-      setErrorMessage("");
+      setUserMessage("");
     }
   };
 
@@ -34,22 +34,24 @@ function Contact() {
     e.preventDefault();
 
     if (!name) {
-      setErrorMessage("Your name is required!");
+      setUserMessage("Your name is required!");
     } else if (!email) {
-      setErrorMessage("Your email is required!");
+      setUserMessage("Your email is required!");
     } else if (!message) {
-      setErrorMessage("Your message is required!");
+      setUserMessage("Your message is required!");
     } else {
-      setErrorMessage("");
+      setUserMessage("");
     }
 
     const isValid = validateEmail(email);
 
     if (!isValid) {
-      setErrorMessage("Your email is invalid!");
+      setUserMessage("Your email is invalid!");
     } else {
-      setErrorMessage(`Thank you, ${name}!`);
+      setUserMessage(`Thank you, ${name}!`);
     }
+
+    // Add post to Formspree
 
     setName("");
     setEmail("");
@@ -74,6 +76,7 @@ function Contact() {
             value={name}
             onChange={handleChange}
             onBlur={validateInput}
+            id="name"
           />
         </div>
 
@@ -82,11 +85,12 @@ function Contact() {
           <input
             type="email"
             autoComplete="false"
-            name="email"
+            name="_replyto"
             placeholder="Enter email"
             value={email}
             onChange={handleChange}
             onBlur={validateInput}
+            id="email"
           />
         </div>
 
@@ -99,14 +103,15 @@ function Contact() {
             value={message}
             onChange={handleChange}
             onBlur={validateInput}
+            id="message"
           />
         </div>
-        {errorMessage && (
+        {userMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error-text">{userMessage}</p>
           </div>
         )}
-        <button onClick={handleSubmit} data-testid="button">
+        <button onClick={handleSubmit} type="submit" data-testid="button">
           Submit
         </button>
       </form>
