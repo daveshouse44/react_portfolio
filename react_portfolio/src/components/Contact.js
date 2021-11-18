@@ -20,7 +20,15 @@ function Contact() {
       setMessage(value);
     }
     return;
-  }
+  };
+
+  const validateInput = (e) => {
+    if (!e.target.value.length) {
+      setErrorMessage(`Your ${e.target.name} is required!`);
+    } else {
+      setErrorMessage("");
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,13 +48,13 @@ function Contact() {
     if (!isValid) {
       setErrorMessage("Your email is invalid!");
     } else {
-      setErrorMessage(`Thank you, ${name}!`)
+      setErrorMessage(`Thank you, ${name}!`);
     }
 
     setName("");
     setEmail("");
     setMessage("");
-  }
+  };
 
   return (
     <section>
@@ -65,6 +73,7 @@ function Contact() {
             placeholder="Enter name"
             value={name}
             onChange={handleChange}
+            onBlur={validateInput}
           />
         </div>
 
@@ -77,6 +86,7 @@ function Contact() {
             placeholder="Enter email"
             value={email}
             onChange={handleChange}
+            onBlur={validateInput}
           />
         </div>
 
@@ -88,6 +98,7 @@ function Contact() {
             placeholder="Thanks for your feedback"
             value={message}
             onChange={handleChange}
+            onBlur={validateInput}
           />
         </div>
         {errorMessage && (
