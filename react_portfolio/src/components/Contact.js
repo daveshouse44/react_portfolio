@@ -63,7 +63,7 @@ function Contact() {
       <h1>Contact me</h1>
       <form
         id="contact-form"
-        action="https://formspree.io/f/myylrdkz"
+        action="https://formspree.io/f/xayarkno"
         method="POST"
       >
         <div>
