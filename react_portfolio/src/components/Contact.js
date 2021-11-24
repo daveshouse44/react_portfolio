@@ -51,7 +51,26 @@ function Contact() {
       setUserMessage(`Thank you, ${name}!`);
     }
 
+    // const values = `${name}, ${email}, ${message}`;
+    // console.log(values);
+
     // Add post to Formspree
+    // this.setState({ isSubmitting: true });
+    // fetch("https://formspree.io/f/xayarkno", {
+    //   mode: "no-cors",
+    //   method: "POST",
+    //   body: JSON.stringify(values),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // })
+    //   .then((res) => {
+    //     console.log(res);
+    //     // this.setState({ isSubmitting: false });
+    //     return res.json();
+    //   })
+    //   .then((data) => console.log(data))
+    //   .catch((err) => console.error("Error:", err));
 
     setName("");
     setEmail("");
@@ -69,7 +88,7 @@ function Contact() {
         <div>
           <label htmlFor="name">Name:</label>
           <input
-            type="text"
+            type="name"
             autoComplete="false"
             name="name"
             placeholder="Enter name"
@@ -111,7 +130,7 @@ function Contact() {
             <p className="error-text">{userMessage}</p>
           </div>
         )}
-        <button onClick={handleSubmit} type="submit" data-testid="button">
+        <button type="submit" onClick={handleSubmit} data-testid="button" value="Submit">
           Submit
         </button>
       </form>
