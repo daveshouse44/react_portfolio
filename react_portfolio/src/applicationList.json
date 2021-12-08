@@ -40,5 +40,19 @@
     "image": "us_national_parks.png",
     "deploy": "https://cumar-khalif.github.io/U.S.-National-Parks/",
     "repo": "https://github.com/Cumar-khalif/U.S.-National-Parks"
+  },
+  {
+    "name": "Shop React Redux",
+    "skill": "React Redux/GraphQL",
+    "image": "shop_react_redux.png",
+    "deploy": "https://shop-react-redux.herokuapp.com/",
+    "repo": "https://github.com/daveshouse44/Shop_React_Redux"
+  },
+  {
+    "name": "Days To Remember",
+    "skill": "React/GraphQL/Twilio",
+    "image": "days_to_remember.png",
+    "deploy": "https://days-to-remember.herokuapp.com/",
+    "repo": "https://github.com/kabaothao/Days-to-Remember"
   }
 ]
