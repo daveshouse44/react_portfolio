@@ -44,6 +44,9 @@ const Resume = () => {
       </ul>
       </div>
       </div>
+      <br />
+      <br />
+      <br />
     </section>
   );
 };

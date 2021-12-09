@@ -80,6 +80,9 @@ function Contact() {
   return (
     <section>
       <h1>Contact me</h1>
+      <p>Email: 
+      <a href ="mailto:davidetierney44@gmail.com"> davidetierney44@gmail.com</a>
+      </p>
       <form
         id="contact-form"
         action="https://formspree.io/f/xayarkno"
@@ -134,6 +137,7 @@ function Contact() {
           Submit
         </button>
       </form>
+      <br />
     </section>
   );
 }
