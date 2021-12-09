@@ -8,7 +8,7 @@ const Resume = () => {
       <p>
         Checkout my resume {" "}
         <a
-          href="https://drive.google.com/file/d/11fyZIj1WSbo1IxztGDIzAUxf06V4z1VK/view?usp=sharing"
+          href="https://drive.google.com/file/d/1iopTG8Iozatg8scbGFYFdrtyGhgnTmT5/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
