@@ -51,26 +51,19 @@ function Contact() {
       setUserMessage(`Thank you, ${name}!`);
     }
 
-    // const values = `${name}, ${email}, ${message}`;
+    const values = {name:`${name}`, email:`${email}`, message:`${message}`}
     // console.log(values);
 
-    // Add post to Formspree
-    // this.setState({ isSubmitting: true });
-    // fetch("https://formspree.io/f/xayarkno", {
-    //   mode: "no-cors",
-    //   method: "POST",
-    //   body: JSON.stringify(values),
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // })
-    //   .then((res) => {
-    //     console.log(res);
-    //     // this.setState({ isSubmitting: false });
-    //     return res.json();
-    //   })
-    //   .then((data) => console.log(data))
-    //   .catch((err) => console.error("Error:", err));
+    fetch("https://formspree.io/f/xayarkno", {
+      mode: "no-cors",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+      .then((data) => console.log(data))
+      .catch((err) => console.error("Error:", err));
 
     setName("");
     setEmail("");
