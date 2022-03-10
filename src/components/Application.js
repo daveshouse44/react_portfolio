@@ -14,8 +14,8 @@ const Application = ({ application }) => {
             <img className="applicationLogo" alt="Git Logo" src={git}></img>
           </a>
         </div>
-        <p>{application.overview}</p>
         <p>Technologies: {application.skill}</p>
+        <p>{application.overview}</p>
       </div>
       <img
         className="applicationBackground"

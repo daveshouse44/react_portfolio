@@ -7,7 +7,7 @@ const Nav = (props) => {
   return (
     <header>
       <div>
-        <h1>David Tierney</h1>
+        <h1>David Tierney | Developer</h1>
       </div>
       <div>
         <nav>

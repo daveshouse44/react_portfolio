@@ -1,5 +1,37 @@
 [
   {
+    "name": "Days To Remember",
+    "skill": "React/GraphQL/Twilio",
+    "image": "days_to_remember.png",
+    "deploy": "https://days-to-remember.herokuapp.com/",
+    "repo": "https://github.com/kabaothao/Days-to-Remember",
+    "overview": "You'll never forget another important day. This application will automatically generate your greetings."
+  },
+  {
+    "name": "Sarah Drinks",
+    "skill": "HTML/Sass/WebFonts",
+    "image": "sarah_drinks.gif",
+    "deploy": "https://daveshouse44.github.io/sarah_drinks/",
+    "repo": "https://github.com/daveshouse44/sarah_drinks",
+    "overview": "Website design and hosting for client. This application is still in production."
+  },
+  {
+    "name": "U.S. National Parks",
+    "skill": "JavaScript/API",
+    "image": "us_national_parks.png",
+    "deploy": "https://cumar-khalif.github.io/U.S.-National-Parks/",
+    "repo": "https://github.com/Cumar-khalif/U.S.-National-Parks",
+    "overview": "Use this application to find and save information about National Parks including weather."
+  },
+  {
+    "name": "Just Tech News",
+    "skill": "Java/JDK/SpringBoot/IntelliJ",
+    "image": "tech-news-java.jpg",
+    "deploy": "https://javaintellij-technews.herokuapp.com/",
+    "repo": "https://github.com/daveshouse44/tech-news-java-api",
+    "overview": "Login, share, post and comment on this tech news aggregator application."
+  },
+  {
     "name": "Anytime Budget Tracker",
     "skill": "NoSQL/IndexDB",
     "image": "anytime_budget_tracker.png",
@@ -40,27 +72,11 @@
     "overview": "Simple application where you can write and save important notes."
   },
   {
-    "name": "U.S. National Parks",
-    "skill": "JavaScript/API",
-    "image": "us_national_parks.png",
-    "deploy": "https://cumar-khalif.github.io/U.S.-National-Parks/",
-    "repo": "https://github.com/Cumar-khalif/U.S.-National-Parks",
-    "overview": "Use this application to find and save information about National Parks including weather."
-  },
-  {
     "name": "Shop React Redux",
     "skill": "React Redux/GraphQL",
     "image": "shop_react_redux.png",
     "deploy": "https://shop-react-redux.herokuapp.com/",
     "repo": "https://github.com/daveshouse44/Shop_React_Redux",
     "overview": "Ecommerce site demonstrating cart functionality and a rebuilt React framework."
-  },
-  {
-    "name": "Days To Remember",
-    "skill": "React/GraphQL/Twilio",
-    "image": "days_to_remember.png",
-    "deploy": "https://days-to-remember.herokuapp.com/",
-    "repo": "https://github.com/kabaothao/Days-to-Remember",
-    "overview": "You'll never forget another important day. This application will automatically generate your greetings."
   }
 ]

@@ -11,13 +11,13 @@ import "./App.css";
 function App() {
   // Set document title to current page rendered
   useEffect(() => {
-    document.title = currentPage;
+    document.title = currentPage + " - David Tierney";
   });
-  const navMenu = ["About", "Portfolio", "Contact", "Resume"];
-  const [currentPage, setCurrentPage] = useState("About");
+  const navMenu = ["Portfolio", "About", "Contact", "Resume"];
+  const [currentPage, setCurrentPage] = useState("");
   // Renders content based on what page is clicked
   const renderPage = () => {
-    console.log("!!!!!!Current Page!!!!!!!", currentPage);
+    // console.log("!!!!!!Current Page!!!!!!!", currentPage);
     if (currentPage === "About") {
       return <About />;
     }

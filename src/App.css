@@ -14,48 +14,48 @@
 
 /* header styling */
 header {
-    width: 100%;
-    height: 90px;
-    background-color: var(--st-patricks-blue);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: var(--st-patricks-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-    margin-left: 55px;
-    color: var(--lavender-blush);
-
+  margin-left: 55px;
+  color: var(--lavender-blush);
 }
 
 .nav {
-    width: auto;
+  width: auto;
 }
 
 .navActive {
-    font-weight: bold;
-    color: var(--tickle-me-pink)
+  font-weight: bold;
+  color: var(--tickle-me-pink);
 }
 
 .nav-list {
-    margin-right: 55px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--lavender-blush)
+  margin-right: 55px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--lavender-blush);
 }
 
 .nav-list li {
-    margin: 15px;
-    cursor: pointer;
-  }
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
 
-  .nav-list li:hover {
-    color: var(--maize-crayola)
-  }
+.nav-list li:hover {
+  color: var(--maize-crayola);
+}
 
 /* about me styling */
 .aboutHeader {
@@ -66,12 +66,12 @@ header h1 {
   margin-left: 50px;
 }
 
-
 /* main body styling */
 section {
   padding: 18px 48px;
   margin: 0 auto;
   color: var(--rich-blk);
+  height: 100vh;
 }
 
 section h1 {
@@ -88,12 +88,12 @@ section p {
   max-width: 200px;
   border-radius: 100%;
   box-shadow: 12px 12px 45px 5px var(--rich-blk);
-  border: 3px solid var(--rich-blk)
+  border: 3px solid var(--rich-blk);
 }
 
 p a {
   text-decoration: none;
-  color: var(--cornflower-blue);
+  color: var(--rich-blk);
   font-weight: bolder;
 }
 
@@ -106,14 +106,15 @@ p a:hover {
   margin: 10px 0px;
   padding: 0.4em 1.25em;
   border: 0.1em solid var(--rich-blk);
-  border-radius:0.2em;
+  border-radius: 0.2em;
   background-color: var(--lavender-blush);
   font-weight: bold;
 }
 
-#contact-form button:hover, #contact-form button:focus{
- transform: scale(1.1);
- background-color: var(--tickle-me-pink);
+#contact-form button:hover,
+#contact-form button:focus {
+  transform: scale(1.1);
+  background-color: var(--tickle-me-pink);
 }
 
 #contact-form {
@@ -149,7 +150,7 @@ p a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .applicationCard {
@@ -161,14 +162,16 @@ p a:hover {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: opacity .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .applicationCard .applicationBackground {
   width: 100%;
   height: 100%;
-  transition: opacity .75s ease-in-out;
+  transition: opacity 0.75s ease-in-out;
   position: absolute;
+  border: 3px solid var(--lavender-blush);
+  border-style: ridge;
 }
 
 .applicationLinks {
@@ -188,11 +191,11 @@ p a:hover {
   text-align: center;
   opacity: 0;
   z-index: 50;
-  transition: opacity .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .applicationCard:hover .applicationBackground {
-  opacity: .2;
+  opacity: 0.1;
 }
 .applicationCard:hover .applicationText {
   opacity: 1;
@@ -200,12 +203,13 @@ p a:hover {
 
 .applicationText p {
   margin: 0;
-  color: var(--st-patricks-blue)
+  color: var(--rich-blk);
+  padding: 5px;
 }
 
 .applicationText a {
   text-decoration: none;
-  color: var(--cornflower-blue);
+  color: var(--rich-blk);
 }
 
 .applicationText a:hover {
@@ -219,7 +223,7 @@ p a:hover {
 /* footer styling */
 footer {
   width: 100%;
-  height: 66px;
+  height: 65px;
   background-color: var(--rich-blk);
   display: flex;
   flex-direction: column;
@@ -227,17 +231,17 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
-  opacity: .3;
+  opacity: 0.6;
 }
 
 footer:hover {
-  opacity: .8;
-  transition: opacity .75s ease-in-out;
+  opacity: 0.9;
+  transition: opacity 0.75s ease-in-out;
   background-color: var(--rich-blk);
 }
 
 footer p {
-  color: var(--lavender-blush)
+  color: var(--lavender-blush);
 }
 
 #logos {

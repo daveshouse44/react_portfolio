@@ -3,6 +3,7 @@ import React from "react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import stackoverflow from "../assets/images/stackoverflow.png";
+import discord from "../assets/images/discord.png";
 
 const Footer = () => {
   return (
@@ -29,8 +30,15 @@ const Footer = () => {
         >
           <img alt="StackOverflow Logo" src={stackoverflow} />
         </a>
+        <a
+          href="https://discordapp.com/users/daveshouse44#3785"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img alt="Discord Logo" src={discord} />
+        </a>
       </div>
-      <p>2021 © David Tierney</p>
+      <p>2022 © David Tierney</p>
     </footer>
   );
 };
