@@ -7,7 +7,9 @@ const Nav = (props) => {
   return (
     <header>
       <div>
-        <h1>David Tierney | Developer</h1>
+        <h1>
+          <span>&#60;</span> David Tierney | Developer <span>&#8725;&#62;</span>
+        </h1>
       </div>
       <div>
         <nav>
