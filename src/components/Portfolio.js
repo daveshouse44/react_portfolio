@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     // Single application component goes here
     <section>
-      <h1>Portfolio</h1>
+      <h1>Portfolio Projects:</h1>
       <div id="applicationCards">
         {applicationList.map((application) => (
           <Application application={application} key={`${application.name}`} />

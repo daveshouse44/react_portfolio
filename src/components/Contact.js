@@ -51,7 +51,11 @@ function Contact() {
       setUserMessage(`Thank you, ${name}!`);
     }
 
-    const values = {name:`${name}`, email:`${email}`, message:`${message}`}
+    const values = {
+      name: `${name}`,
+      email: `${email}`,
+      message: `${message}`,
+    };
     // console.log(values);
 
     fetch("https://formspree.io/f/xayarkno", {
@@ -72,9 +76,13 @@ function Contact() {
 
   return (
     <section>
-      <h1>Contact me</h1>
-      <p>Email: 
-      <a href ="mailto:davidetierney44@gmail.com"> davidetierney44@gmail.com</a>
+      <h1>Reach out here!</h1>
+      <p>
+        Email:
+        <a href="mailto:davidetierney44@gmail.com">
+          {" "}
+          davidetierney44@gmail.com
+        </a>
       </p>
       <form
         id="contact-form"
@@ -126,7 +134,12 @@ function Contact() {
             <p className="error-text">{userMessage}</p>
           </div>
         )}
-        <button type="submit" onClick={handleSubmit} data-testid="button" value="Submit">
+        <button
+          type="submit"
+          onClick={handleSubmit}
+          data-testid="button"
+          value="Submit"
+        >
           Submit
         </button>
       </form>
