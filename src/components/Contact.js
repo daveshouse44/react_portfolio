@@ -75,10 +75,10 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className="contactFormSection">
       <h1>Reach out here!</h1>
       <p>
-        Email:
+        📧
         <a href="mailto:davidetierney44@gmail.com">
           {" "}
           davidetierney44@gmail.com

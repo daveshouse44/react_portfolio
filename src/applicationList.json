@@ -40,6 +40,14 @@
     "overview": "Track your finances whether online or offline. Add expenses or deposits regardless of connection."
   },
   {
+    "name": "Snake Game!",
+    "skill": "HTML/CSS/JavaScript",
+    "image": "snake_screenshot.gif",
+    "deploy": "https://daveshouse44.github.io/snake_game/",
+    "repo": "https://github.com/daveshouse44/snake_game",
+    "overview": "Classic Snake app that tracks your score built with pure JavaScript."
+  },
+  {
     "name": "Password Generator",
     "skill": "JavaScript/HTML",
     "image": "password_generator.png",

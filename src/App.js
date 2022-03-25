@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   // Set document title to current page rendered
   useEffect(() => {
-    document.title = currentPage + " - David Tierney";
+    document.title = currentPage + " | David Tierney";
   });
   const navMenu = ["Portfolio", "About", "Contact", "Resume"];
   const [currentPage, setCurrentPage] = useState("");

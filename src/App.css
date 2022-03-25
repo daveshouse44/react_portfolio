@@ -30,20 +30,12 @@ header h1 {
   text-shadow: 3px 3px 2px var(--rich-blk);
 }
 
-@media screen and (max-width: 500px) {
-  header h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-left: 20px;
-  }
-}
-
 .nav {
   width: auto;
 }
 
 .nav ul {
-  width: 100%;
+  width: 100vw;
 }
 
 .navActive {
@@ -67,10 +59,12 @@ header h1 {
   cursor: pointer;
   text-align: center;
   text-shadow: 2px 2px var(--rich-blk);
+  transition: 150ms ease-in-out;
 }
 
 .nav-list li:hover {
   color: var(--maize-crayola);
+  transform: translateY(-2px);
 }
 
 /* about me styling */
@@ -83,7 +77,20 @@ header h1 {
   margin-left: 25px;
 }
 
-/* main body styling */
+.aboutText {
+  margin-top: 15px;
+  border: 4px solid var(--lavender-blush);
+  border-style: ridge;
+  background-color: var(--rich-blk);
+  box-shadow: 5px 5px 2px var(--rich-blk);
+}
+
+.aboutText p {
+  padding: 1em;
+  color: var(--lavender-blush);
+}
+
+/* primary text styling */
 section {
   padding: 18px 48px;
   margin: 0 auto;
@@ -107,17 +114,20 @@ section p {
   max-width: 200px;
   border-radius: 100%;
   box-shadow: 12px 12px 45px 5px var(--rich-blk);
-  border: 3px solid var(--rich-blk);
+  border: 4px solid var(--lavender-blush);
+  border-style: ridge;
 }
 
 p a {
   text-decoration: none;
-  color: var(--rich-blk);
+  color: var(--maize-crayola);
+  text-shadow: 2px 2px 1px var(--rich-blk);
   font-weight: bolder;
+  transition: 150ms ease-in-out;
 }
 
 p a:hover {
-  color: var(--maize-crayola);
+  color: var(--tickle-me-pink);
 }
 
 /* contact form styling */
@@ -126,24 +136,33 @@ p a:hover {
   padding: 0.4em 1.25em;
   border: 0.1em solid var(--rich-blk);
   border-radius: 0.2em;
-  background-color: var(--lavender-blush);
+  background-color: var(--maize-crayola);
   font-weight: bold;
+  box-shadow: 1px 1px 2px var(--cornflower-blue);
+  transition: 150ms ease-in-out;
 }
 
 #contact-form button:hover,
 #contact-form button:focus {
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(2px);
   background-color: var(--tickle-me-pink);
+  box-shadow: 2px 2px 3px var(--cornflower-blue);
 }
 
 #contact-form {
   padding: 40px 25px 40px 25px;
-  width: 75%;
+  border: 4px solid var(--lavender-blush);
+  border-style: ridge;
+  background-color: var(--rich-blk);
+  box-shadow: 5px 5px 2px var(--rich-blk);
 }
 
 #contact-form label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--maize-crayola);
+  text-shadow: 2px 2px var(--st-patricks-blue);
   display: block;
-  font-weight: bold;
 }
 
 #contact-form input {
@@ -155,9 +174,15 @@ p a:hover {
   width: 100%;
 }
 
+input,
+textarea {
+  background-color: var(--lavender-blush);
+  margin-bottom: 3px;
+}
+
 .error-text {
   color: var(--tickle-me-pink);
-  text-shadow: 2px 2px var(--rich-blk);
+  text-shadow: 1px 1px 1px var(--lavender-blush);
   font-weight: bold;
 }
 
@@ -234,6 +259,7 @@ iframe {
 
 .applicationCard:hover .applicationBackground {
   opacity: 0.1;
+  transform: scale(1.05);
 }
 .applicationCard:hover .applicationText {
   opacity: 1;
@@ -247,16 +273,22 @@ iframe {
 
 .applicationText a {
   text-decoration: none;
+  text-shadow: 2px 2px 3px var(--lavender-blush);
   color: var(--rich-blk);
+  transition: 150ms ease-in-out;
 }
 
 .applicationText a:hover {
   color: var(--maize-crayola);
+  text-shadow: 2px 2px 3px var(--rich-blk);
+  transform: scale(1.1);
 }
 
 .applicationLogo:hover {
   background-color: var(--tickle-me-pink);
   border-radius: 75%;
+  transition: 150ms ease-in-out;
+  transform: scale(1.1);
 }
 /* footer styling */
 footer {
@@ -297,4 +329,22 @@ footer p {
   opacity: 1;
   background-color: var(--maize-crayola);
   border-radius: 50%;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 500px) {
+  header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  .contactFormSection {
+    width: 100%;
+  }
+  #contact-form {
+    padding: 3px;
+    width: 100vw;
+  }
+  .applicationCard:hover .applicationBackground {
+    transform: initial;
+  }
 }
