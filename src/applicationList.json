@@ -48,6 +48,14 @@
     "overview": "Classic Snake app that tracks your score built with pure JavaScript."
   },
   {
+    "name": "Tic Tac Toe!",
+    "skill": "Angular/TypeScript/Nebular",
+    "image": "tic-tac-toe-sc.jpg",
+    "deploy": "https://tic-tac-toe-44.herokuapp.com/",
+    "repo": "https://github.com/daveshouse44/tic_tac_toe",
+    "overview": "3 in a row wins in this Angular PWA game launched to Heroku."
+  },
+  {
     "name": "Password Generator",
     "skill": "JavaScript/HTML",
     "image": "password_generator.png",
