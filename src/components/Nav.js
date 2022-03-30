@@ -1,4 +1,6 @@
 import React from "react";
+// allows a href tag to create link and change url
+import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   // Props destructured
@@ -20,7 +22,7 @@ const Nav = (props) => {
                 className={`${currentPage === menu && "navActive"}`}
                 onClick={() => setCurrentPage(menu)}
               >
-                {menu}
+                <Link to={`/react_portfolio/${menu}`}>{menu}</Link>
               </li>
             ))}
           </ul>

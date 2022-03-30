@@ -61,6 +61,11 @@ header h1 {
   text-shadow: 2px 2px var(--rich-blk);
   transition: 150ms ease-in-out;
 }
+/* restore styling to created a tags from default */
+.nav-list li a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .nav-list li:hover {
   color: var(--maize-crayola);
