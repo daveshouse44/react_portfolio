@@ -24,7 +24,7 @@ function App() {
   // Changed this to used react router dom
   const renderLandingPage = () => {
     // console.log("!!!!!!Current Page!!!!!!!", currentPage);
-    if (location.pathname === "/react_portfolio") return <Landing />;
+    if (location.pathname === "/react_portfolio/") return <Landing />;
   };
   // Passes menu items, current page and page change function to nav bar, renders page in to main body of html
   return (

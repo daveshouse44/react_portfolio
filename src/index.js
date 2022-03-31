@@ -14,7 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="react_portfolio" element={<App />}></Route>
+        <Route path="react_portfolio/" element={<App />}></Route>
         <Route
           path="react_portfolio/Portfolio"
           element={
