@@ -67,7 +67,48 @@ header h1 {
 
 .nav-list li:hover {
   color: var(--maize-crayola);
+  font-weight: bold;
   transform: translateY(-2px);
+}
+
+/* landing styling */
+.landingHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.landingHeader img {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.landingText {
+  margin-top: 1em;
+  border: 4px solid var(--lavender-blush);
+  border-style: ridge;
+  background-color: var(--rich-blk);
+  box-shadow: 5px 5px 2px var(--rich-blk);
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.landingText h1 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: var(--maize-crayola);
+  text-shadow: 2px 2px 2px var(--cornflower-blue);
+}
+
+.landingText h2 {
+  padding-bottom: 2.1em;
+  color: var(--maize-crayola);
+  text-shadow: 2px 2px 2px var(--cornflower-blue);
+}
+
+.landingText p {
+  padding: 1em;
+  color: var(--lavender-blush);
 }
 
 /* about me styling */
@@ -77,20 +118,20 @@ header h1 {
 
 .aboutHeader img {
   margin-top: 12px;
-  margin-left: 25px;
+  margin-left: 18px;
 }
 
 .aboutText {
   margin-top: 15px;
   border: 4px solid var(--lavender-blush);
   border-style: ridge;
-  background-color: var(--rich-blk);
+  background-color: var(--lavender-blush);
   box-shadow: 5px 5px 2px var(--rich-blk);
 }
 
 .aboutText p {
   padding: 1em;
-  color: var(--lavender-blush);
+  color: var(--rich-blk);
 }
 
 /* primary text styling */
@@ -209,6 +250,7 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 5px 5px 2px var(--rich-blk);
 }
 /* portfolio styling */
 #applicationCards {
@@ -306,6 +348,7 @@ footer {
   position: fixed;
   bottom: 0;
   opacity: 0.6;
+  z-index: 10;
 }
 
 footer:hover {
